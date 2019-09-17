@@ -1,0 +1,107 @@
+.sideView {
+  display: inline-block;
+  overflow: scroll;
+  height: 600px;
+  width: 450px;
+  background-color: #777;
+}
+
+.sideView1, .sideView2, .sideView3, .sideView4, .sideView5 {
+  border: 1px solid black;
+  width: 400px;
+  padding: 20px;
+  margin: 7px;
+  background-color: #d1c9c9;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+.stars .star-five {
+  width: 0px;
+  height: 0px;
+  margin: 5px 0;
+  position: relative;
+  display: block;
+  color: #888824;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid #888824;
+  border-left: 10px solid transparent;
+  transform: rotate(35deg);
+}
+.stars .star-five:before {
+  width: 0px;
+  height: 0px;
+  border-bottom: 8px solid #888824;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  top: -4.5px;
+  left: -6.5px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.stars .star-five:after {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  display: block;
+  color: #888824;
+  top: 0.2px;
+  left: -10.5px;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid #888824;
+  border-left: 10px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+.stars .star-five-nocolor {
+  width: 0px;
+  height: 0px;
+  margin: 5px 0;
+  position: relative;
+  display: block;
+  color: #646060;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid #646060;
+  border-left: 10px solid transparent;
+  transform: rotate(35deg);
+}
+.stars .star-five-nocolor:before {
+  width: 0px;
+  height: 0px;
+  border-bottom: 8px solid #646060;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  top: -4.5px;
+  left: -6.5px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.stars .star-five-nocolor:after {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  display: block;
+  color: #646060;
+  top: 0.2px;
+  left: -10.5px;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid #646060;
+  border-left: 10px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+#mainView {
+  display: inline-block;
+  background: #695555;
+  height: 600px;
+  width: 810px;
+}
+
+/*# sourceMappingURL=movie.css.map */

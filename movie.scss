@@ -1,0 +1,117 @@
+@mixin sideBorder{
+    border: 1px solid black;
+    width: 400px;
+    padding: 20px;
+    margin: 7px;
+    background-color:rgb(209, 201, 201);
+}
+@mixin star($color, $size) {
+    .star-five{
+      width: 0px;
+      height: 0px;
+    margin: $size/2 0;
+    position: relative;
+    display: block;
+    color: $color;
+    border-right: $size solid transparent;
+    border-bottom: $size/100*70 solid $color;
+    border-left: $size solid transparent;
+    transform: rotate(35deg);
+    &:before {
+        width: 0px;
+        height: 0px;
+        border-bottom: $size/100*80 solid $color;
+        border-left: $size/100*30 solid transparent;
+        border-right: $size/100*30 solid transparent;
+        position: absolute;
+        top: -$size/100*45;
+        left: -$size/100*65;
+        display: block;
+        content: '';
+        transform: rotate(-35deg);
+    }
+    &:after {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        display: block;
+        color: $color;
+        top: $size/100*2;
+        left: -$size/100*105;
+        border-right: $size solid transparent;
+        border-bottom: $size/100*70 solid $color;
+        border-left: $size solid transparent;
+        transform: rotate(-70deg);
+        content: '';
+    }
+}
+ }
+ @mixin star-nocolor($color, $size) {
+    .star-five-nocolor{
+      width: 0px;
+      height: 0px;
+    margin: $size/2 0;
+    position: relative;
+    display: block;
+    color: $color;
+    border-right: $size solid transparent;
+    border-bottom: $size/100*70 solid $color;
+    border-left: $size solid transparent;
+    transform: rotate(35deg);
+    &:before {
+        width: 0px;
+        height: 0px;
+        border-bottom: $size/100*80 solid $color;
+        border-left: $size/100*30 solid transparent;
+        border-right: $size/100*30 solid transparent;
+        position: absolute;
+        top: -$size/100*45;
+        left: -$size/100*65;
+        display: block;
+        content: '';
+        transform: rotate(-35deg);
+    }
+    &:after {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        display: block;
+        color: $color;
+        top: $size/100*2;
+        left: -$size/100*105;
+        border-right: $size solid transparent;
+        border-bottom: $size/100*70 solid $color;
+        border-left: $size solid transparent;
+        transform: rotate(-70deg);
+        content: '';
+    }
+}
+ }
+.sideView{
+    display: inline-block;
+    overflow: scroll;
+    height: 600px;
+    width: 450px;
+    background-color:#777; 
+}
+
+.sideView1,.sideView2,.sideView3,.sideView4,.sideView5{
+    @include sideBorder;
+}
+.stars{
+    @include star(rgb(136, 136, 36),10px);
+    display: flex;
+    flex-direction: row;
+    @include star-nocolor(rgb(100, 96, 96),10px )
+     
+}
+
+
+#mainView{
+    display: inline-block;
+    background: rgb(105, 85, 85);
+    height: 600px;
+    width:810px ;
+    
+    
+}
