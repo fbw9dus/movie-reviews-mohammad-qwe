@@ -1,17 +1,24 @@
 .sideView {
-  display: inline-block;
-  overflow: scroll;
+  overflow: auto;
   height: 600px;
-  width: 450px;
+  width: 30%;
   background-color: #777;
+  box-sizing: border-box;
 }
 
 .sideView1, .sideView2, .sideView3, .sideView4, .sideView5 {
   border: 1px solid black;
-  width: 400px;
   padding: 20px;
   margin: 7px;
   background-color: #d1c9c9;
+}
+
+.sideView1:hover, .sideView2:hover, .sideView3:hover, .sideView4:hover, .sideView5:hover {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 7px;
+  background-color: #d1c9c9;
+  background-color: whitesmoke;
 }
 
 .stars {
@@ -98,10 +105,22 @@
 }
 
 #mainView {
-  display: inline-block;
-  background: #695555;
+  background-image: url("movie.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 600px;
-  width: 810px;
+  width: 80%;
+  text-align: center;
+  font-size: 2.5vw;
+  color: white;
+  text-shadow: 1px 2px black;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+
+main {
+  display: flex;
+  height: 650px;
 }
 
 /*# sourceMappingURL=movie.css.map */
